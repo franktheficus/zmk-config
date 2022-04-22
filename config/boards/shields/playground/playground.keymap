@@ -9,11 +9,9 @@
  
          default_layer {
              bindings = <
-              &kp X
-              &kp Z
+              &out OUT_BLE
+              &bt BT_CLR
              >;
          };
      };
  };
-
- &out OUT_BLE
