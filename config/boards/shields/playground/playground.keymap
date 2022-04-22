@@ -9,8 +9,11 @@
  
          default_layer {
              bindings = <
-              &out OUT_BLE
+              &out OUT_TOG
+              &bt BT_NXT
               &bt BT_CLR
+              &kp A
+              &kp B
              >;
          };
      };
