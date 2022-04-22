@@ -1,0 +1,6 @@
+if SHIELD_PLAYNANO
+
+config ZMK_KEYBOARD_NAME
+    default "Playnano"
+
+endif

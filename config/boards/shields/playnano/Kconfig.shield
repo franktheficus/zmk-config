@@ -1,0 +1,2 @@
+config SHIELD_PLAYNANO
+    def_bool $(shields_list_contains, playnano)
