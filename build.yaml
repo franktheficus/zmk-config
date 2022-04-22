@@ -17,5 +17,3 @@ include:
     shield: hummingbird
   - board: seeeduino_xiao_ble
     shield: playground
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
