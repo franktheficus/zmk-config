@@ -1,6 +1,9 @@
 if SHIELD_PLAYGROUND
 
 config ZMK_KEYBOARD_NAME
-    default "Test board"
+    default "Some board"
+
+config ZMK_BLE
+    default y
 
 endif
