@@ -1,0 +1,6 @@
+if SHIELD_PLAYGROUND
+
+config ZMK_KEYBOARD_NAME
+    default "Test board"
+
+endif
