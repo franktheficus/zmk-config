@@ -13,11 +13,7 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
-    shield: hummingbird
-  - board: seeeduino_xiao_ble
-    shield: playground
   - board: nice_nano_v2
-    shield: playnano
+    shield: corne
   - board: nice_nano_v2
     shield: settings_reset
