@@ -21,13 +21,13 @@
                 default_layer {
                         bindings = <
 //,------------------------------------------------------------------.                    ,-----------------------------------------------------------------------.
-   &none    &hm LCTRL Q &kp W     &kp F         &kp P       &kp B                          &kp J    &kp L       &kp U           &kp Y         &kp SEMI    &none
+   &none    &hm LCTRL Q &kp W     &kp F         &kp P       &kp B                          &kp J    &kp L       &kp U           &kp Y         &hm LCTRL SQT  &none
 //|--------+----------+----------+-------------+-----------+---------|                    |--------+-----------+---------------+-------------+-----------+--------|
-   &none    &kp A      &kp R      &kp S         &kp T       &kp G                          &kp M    &kp N       &kp E           &kp I         &kp O       &none
+   &none    &kp A      &kp R      &kp S         &lt 4 T     &kp G                          &kp M    &kp N       &kp E           &kp I         &kp O       &none
 //|--------+----------+----------+-------------+-----------+---------|                    |--------+-----------+---------------+-------------+-----------+--------|
    &none    &kp Z      &hm LALT X &kp C         &kp D       &kp V                          &kp K    &kp H       &kp COMMA       &kp DOT       &kp FSLH    &none
 //|--------+----------+-----------+------------+-----------+---------+-----------|  |--------------+-----------+---------------+-------------+-----------+--------|
-                                                &lt 1 ESC   &kp BSPC   &kp SPACE           &kp TAB  &kp  TAB    &kp DEL
+                                          &lt 1 ESC   &kp BSPC   &hm LSHIFT SPACE        &lt 2 TAB  &mo  3     &mo 4
                                             //`----------------------------------'  `------------------------------------------'
                         >;
                 };
@@ -39,7 +39,7 @@
 //|--------+------------+------------+------------+------------+------------|                    |--------+----------+--------+--------+----------+--------|
    &none    &trans       &trans       &trans       &trans       &trans                            &trans   &trans     &trans   &trans   &trans     &none
 //|--------+------------+------------+------------+------------+------------|                    |--------+----------+--------+--------+----------+--------|
-   &none    &trans       &trans       &trans       &trans       &bootloader                       &bootloader   &trans     &trans   &trans   &trans     &none
+   &none    &trans       &trans       &trans       &trans       &bootloader                       &bootloader  &trans &trans   &trans   &trans     &none
 //|--------+------------+------------+------------+------------+------------+--------|  |--------+--------+----------+--------+--------+----------+--------|
                                                    &trans       &trans       &trans      &trans   &trans   &bt BT_CLR
                                                 //`----------------------------------'  `----------------------------'
@@ -49,11 +49,11 @@
                 layer_2 {
                         bindings = <
 //,---------------------------------------------------------------.                    ,-------------------------------------------------------------.
-   &none    &kp N1   &kp N2     &kp N3       &kp N4       &kp N5                        &kp N6   &kp N7       &kp N8       &kp N9   &kp N0   &none
+   &none    &none    &kp AMPS     &kp STAR    &none       &none                         &kp EXCL   &kp COLON  &kp LPAR     &kp RPAR  &kp SEMI &none
 //|--------+--------+----------+------------+------------+--------|                    |--------+------------+------------+--------+--------+--------|
-   &none    &kp F1   &kp F2     &kp F3       &kp F4       &kp F5                        &kp F6   &kp F7       &kp F8       &kp F9   &kp F10  &none
+   &none    &kp DEL  &kp DLLR   &kp PRCNT    &kp CARET    &none                         &kp MINUS &kp EQUAL   &kp LBKT     &kp RBKT &kp GRAVE   &none
 //|--------+--------+----------+------------+------------+--------|                    |--------+------------+------------+--------+--------+--------|
-   &none    &trans   &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans                        &trans   &kp C_BRI_DN &kp C_BRI_UP &kp F11  &kp F12  &none
+   &none    &none    &kp EXCL   &kp AT       &kp HASH     &none                         &kp RET  &kp PIPE     &kp COMMA    &kp DOT  &kp BSLH  &none
 //|--------+--------+----------+------------+------------+--------+--------|  |--------+--------+------------+------------+--------+--------+--------|
                                              &trans       &trans   &trans      &trans   &trans   &kp INS
                                          //`-------------------------------'  `------------------------------'
@@ -63,11 +63,11 @@
                 layer_3 {
                         bindings = <
 //,---------------------------------------------------------.                    ,----------------------------------------------------------.
-   &none    &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT                      &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
+   &none    &kp FSLH  &kp N7    &kp N8    &kp N9   &kp PLUS                       &none     &none     &none     &none     &none     &none
 //|--------+---------+---------+---------+--------+---------|                    |---------+---------+---------+---------+---------+--------|
-   &none    &kp MINUS &kp EQUAL &kp PLUS  &kp PIPE &trans                         &trans    &kp BSLH  &kp LBRC  &kp RBRC  &kp SQT   &none
+   &none    &kp N0    &kp N4    &kp N5    &kp N6   &kp MINUS                      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSLH  &none
 //|--------+---------+---------+---------+--------+---------|                    |---------+---------+---------+---------+---------+--------|
-   &none    &kp UNDER &kp GRAVE &kp TILDE &trans   &trans                         &trans    &trans    &kp LBKT  &kp RBKT  &kp DQT   &none
+   &none    &kp none  &kp N1    &kp N2    &kp N3   &kp EQUAL                      &kp RET   &none     &kp COMMA &kp DOT   &none     &none
 //|--------+---------+---------+---------+--------+---------+--------|  |--------+---------+---------+---------+---------+---------+--------|
                                           &trans   &trans    &trans      &trans   &trans    &trans
                                        //`---------------------------'  `----------------------------'
@@ -77,11 +77,11 @@
                 layer_4 {
                         bindings = <
 //,--------------------------------------------------------.                    ,----------------------------------------------------------.
-   &none    &trans   &trans   &trans     &kp PSCRN &trans                        &trans   &trans   &trans     &trans     &trans    &none
+   &none    &none    &none    &none      &none     &none                         &none    &none    &none      &none      &none     &none
 //|--------+--------+--------+----------+---------+--------|                    |--------+--------+----------+----------+---------+--------|
-   &none    &kp LALT &kp LGUI &kp LSHIFT &kp LCTRL &trans                        &trans   &kp LEFT &kp DOWN   &kp UP     &kp RIGHT &none
+   &none    &kp DEL  &kp LALT &kp LGUI   &trans    &none                         &kp LEFT &kp DOWN &kp UP     &kp RIGHT  &kp BSLH  &none
 //|--------+--------+--------+----------+---------+--------|                    |--------+--------+----------+----------+---------+--------|
-   &none    &trans   &trans   &trans     &trans    &trans                        &trans   &kp HOME &kp PG_DN  &kp PG_UP  &kp END   &none
+   &none    &none    &none    &none      &none     &none                         &kp RET  &kp HOME &kp PG_DN  &none      &none     &none
 //|--------+--------+--------+----------+---------+--------+--------|  |--------+--------+--------+----------+----------+---------+--------|
                                          &trans    &trans   &trans      &trans   &trans   &trans
                                       //`---------------------------'  `--------------------------'
