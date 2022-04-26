@@ -23,10 +23,10 @@
         b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
         status = "okay";
-    }
+    };
 
     sensors {
         compatible = "zmk, keymap-sensors";
         sensors = <&encoder>;
-    }
+    };
 };
