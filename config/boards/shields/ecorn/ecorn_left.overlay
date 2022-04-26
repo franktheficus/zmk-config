@@ -17,16 +17,6 @@
 		;
 };
 
-encoder: encoder {
-    compatible = "alps,ec11";
-    label = "ENCODER";
-    a-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    resolution = <2>;
+&left_encoder {
     status = "okay";
-};
-
-sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&encoder>;
 };
