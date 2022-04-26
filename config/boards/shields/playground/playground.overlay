@@ -1,3 +1,5 @@
+#include "playground.dtsi"
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -15,4 +17,8 @@
 			, <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			;
     };
+
+    &left_encoder {
+        status = "okay"
+    }
 };
