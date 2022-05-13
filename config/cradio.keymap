@@ -29,7 +29,7 @@
 		&hm LCTRL SQT &kp W &kp F &kp P &kp B 					&kp J &kp L  &kp U    &kp Y   &hm LCTRL Q
 		&kp A &kp R &kp S &lt 4 T &kp G 			       	    &kp M &kp N  &kp E    &kp I   &kp O
 		&kp Z &hm LALT X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp FSLH
-          				            &sl 1 &kp SPC  		&sk LSHFT &sl 2 
+          				            &mo 1 &kp SPC  		&sk LSHFT &sl 2 
 		>;
 		};
 
