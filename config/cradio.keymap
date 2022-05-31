@@ -12,22 +12,23 @@
 
 	combos {
 		compatible = "zmk,combos";
-		combo_tab {
-			timeout-ms = <50>;
-			key-positions = <28 29>;
-			bindings = <&kp TAB>;
-		};
 
 		combo_esc {
 			timeout-ms = <50>;
 			key-positions = <0 1>;
-			bindings = <&kp LSHFT>;
+			bindings = <&kp ESC>;
 		};
 
 		combo_bspc {
 			timeout-ms = <50>;
-			key-positions = <17 18>;
+			key-positions = <8 9>;
 			bindings = <&kp BKSP>;
+		};
+
+		combo_tab {
+			timeout-ms = <50>;
+			key-positions = <27 28>;
+			bindings = <&kp TAB>;
 		};
 	};
 
