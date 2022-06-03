@@ -57,7 +57,6 @@
 			label = "TAP_DANCE";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			quick-tap-ms = <0>;
 			flavor = "tap-preferred";
 			bindings = <&sk>, <&caps_word>;
 		};
