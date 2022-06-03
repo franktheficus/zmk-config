@@ -14,7 +14,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS BKSP>;
 };
 
 / {
@@ -64,6 +64,13 @@
 			tapping-term-ms = <150>;
 			bindings = <&sk LSHFT>, <&caps_word>;
 		};
+		td_under: tap_dance_underscore {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_UNDERSCORE";
+			#binding-cells = <0>;
+			tapping-term-ms = <150>;
+			bindings = <&kp MINUS>, <&kp UNDER>;
+		};
     };
 
         keymap {
@@ -90,8 +97,8 @@
 		right_layer {
 		bindings = <
 		&none     &kp AMPS  &kp STAR  &none     &none    		&kp EXCL  &kp COLON &kp LPAR &kp RPAR &kp SEMI 
-		&kp DEL   &kp DLLR  &kp PRCNT &kp CARET &none			&kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp GRAVE
-		&kp LSHFT &kp EXCL  &kp AT    &kp HASH  &none   			&kp RET   &kp PIPE  &kp CMMA &kp DOT  &kp BSLH
+		&kp DEL   &kp DLLR  &kp PRCNT &kp CARET &none			&td_under &kp EQUAL &kp LBKT &kp RBKT &kp GRAVE
+		&kp LSHFT &kp EXCL  &kp AT    &kp HASH  &none   		&kp RET   &kp PIPE  &kp CMMA &kp DOT  &kp BSLH
 					                 &mo 3    &trans  		&trans  &trans 
 		>;
 		};	
