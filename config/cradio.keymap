@@ -61,14 +61,14 @@
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_CAPS_WORD";
 			#binding-cells = <0>;
-			tapping-term-ms = <150>;
+			tapping-term-ms = <175>;
 			bindings = <&sk LSHFT>, <&caps_word>;
 		};
 		td_under: tap_dance_underscore {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_UNDERSCORE";
 			#binding-cells = <0>;
-			tapping-term-ms = <150>;
+			tapping-term-ms = <175>;
 			bindings = <&kp MINUS>, <&kp UNDER>;
 		};
     };
