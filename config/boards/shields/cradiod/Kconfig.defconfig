@@ -1,0 +1,16 @@
+if SHIELD_CRADIOD_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "Cradiod"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_CRADIOD_LEFT || SHIELD_CRADIOD_RIGHT || SHIELD_CRADIOD_DONGLE
+
+config ZMK_SPLIT
+	default y
+
+endif

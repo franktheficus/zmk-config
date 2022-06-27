@@ -1,0 +1,11 @@
+#include "cradiod.dtsi"
+
+&default_transform {
+     col-offset = <34>;
+};
+
+&kscan0 {
+    input-gpios
+        = <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        ;
+};

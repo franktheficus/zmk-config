@@ -1,0 +1,12 @@
+file_format: "1"
+id: cradiod
+name: Cradiod/Sweep
+type: shield
+url: https://github.com/davidphilipbarr/Sweep
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - cradiod_left
+  - cradiod_right
+  - cradiod_dongle
