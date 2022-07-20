@@ -92,8 +92,9 @@
 		&kp N0    &kp N4   &kp N5  &kp N6  &kp MINUS 		    &kp LEFT &kp DOWN  &kp UP     &kp RIGHT &kp BKSP 
 		&kp LSHFT &kp N1   &kp N2  &kp N3  &kp EQUAL 	        &kp RET  &none     &kp CMMA   &kp DOT   &none 
 					            &trans &trans &trans 			&trans &mo 3 &trans
-		>;
 		};
+		sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
+		>;
 		
 		right_layer {
 		bindings = <
@@ -111,7 +112,6 @@
 		&bt BT_CLR &bt BT_NXT &bt BT_PRV &kp F6    &bootloader   		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					                 &trans &trans &trans  			&trans &trans &trans
 		>;
-		sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
 		};
 
         layer_4 {
