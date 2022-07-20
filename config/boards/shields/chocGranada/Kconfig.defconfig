@@ -1,0 +1,6 @@
+if SHIELD_CHOC_GRANADA
+
+config ZMK_KEYBOARD_NAME
+    default "ChocGranada"
+
+endif
