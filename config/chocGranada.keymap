@@ -111,6 +111,7 @@
 		&bt BT_CLR &bt BT_NXT &bt BT_PRV &kp F6    &bootloader   		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					                 &trans &trans &trans  			&trans &trans &trans
 		>;
+		sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
 		};
 
         layer_4 {
