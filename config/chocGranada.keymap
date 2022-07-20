@@ -83,7 +83,7 @@
 		&kp Z &hm LALT X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp FSLH
           				        &kp A   &mo 1 &kp SPC  		&td_cw &sl 2 &kp A
 		>;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
        		left_layer {
