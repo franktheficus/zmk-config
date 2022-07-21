@@ -81,7 +81,17 @@
 		&hm LCTRL SQT &kp W &kp F &kp P &kp B 					&kp J &kp L  &kp U    &kp Y   &hm LCTRL Q
 		&kp A &kp R &kp S &lt 4 T &kp G 			       	    &kp M &kp N  &kp E    &kp I   &kp O
 		&kp Z &hm LALT X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp FSLH
-          			     &kp BKSP &mo 1 &kp SPC  		&td_cw &sl 2 &sl 1
+          			     &kp BKSP &mo 2 &kp SPC  		&td_cw &sl 3 &sl 2
+		>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+		};
+
+			game_layer {
+		bindings = <
+		&kp Q     &kp E     &kp W     &kp R     &kp T 			&kp Y &kp U  &kp I    &kp O   &kp P
+		&kp F     &kp A     &kp S     &kp D     &kp G 			&kp H &kp J  &kp K    &kp L   &kp SEMI
+		&kp Z     &kp X     &kp C     &kp V     &kp B			&kp N &kp M  &kp CMMA &kp DOT &kp FSLH
+        		  			&kp LCTRL &kp LSHFT &kp SPC  		&td_cw &sl 3 &sl 2
 		>;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
@@ -91,7 +101,7 @@
 		&kp FSLH  &kp N7   &kp N8  &kp N9  &kp PLUS		        &none    &kp C_PP  &kp C_NEXT &none     &none 
 		&kp N0    &kp N4   &kp N5  &kp N6  &kp MINUS 		    &kp LEFT &kp DOWN  &kp UP     &kp RIGHT &kp BKSP 
 		&kp LSHFT &kp N1   &kp N2  &kp N3  &kp EQUAL 	        &kp RET  &none     &kp CMMA   &kp DOT   &none 
-					            &trans &trans &trans 			&trans &mo 3 &trans
+					            &trans &trans &trans 			&trans &mo 4 &trans
 		>;
 		sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
 		};
@@ -101,15 +111,15 @@
 		&none     &kp AMPS  &kp STAR  &none     &none    		&kp EXCL  &kp COLON &kp LPAR &kp RPAR &kp SEMI 
 		&kp DEL   &kp DLLR  &kp PRCNT &kp CARET &none			&td_under &kp EQUAL &kp LBKT &kp RBKT &kp GRAVE
 		&kp LSHFT &kp EXCL  &kp AT    &kp HASH  &none   		&kp RET   &kp PIPE  &kp CMMA &kp DOT  &kp BSLH
-					               &trans  &mo 3 &trans  	&trans  &trans &trans
+					               &trans  &mo 4 &trans  	&trans  &trans &trans
 		>;
 		};	
 		
 		tri_layer {
 		bindings = <
 		&kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4 &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1     &kp F2     &kp F3     &kp F4    &kp F5  				&trans &tog 5  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR &bt BT_NXT &bt BT_PRV &kp F6    &bootloader   		&trans &tog 0  &kp K_VOL_DN  &trans &trans   
+		&kp F1     &kp F2     &kp F3     &kp F4    &kp F5  				&trans &to 1  &kp K_VOL_UP &kp K_MUTE &trans 
+		&bt BT_CLR &bt BT_NXT &bt BT_PRV &kp F6    &bootloader   		&trans &to 0  &kp K_VOL_DN  &trans &trans   
 					                 &trans &trans &trans  			&trans &trans &trans
 		>;
 		};
@@ -123,16 +133,5 @@
 		>;
 		sensor-bindings = <&inc_dec_kp LA(DOWN) LA(UP)>;
 		};	
-
-		game_layer {
-		bindings = <
-		&kp Q     &kp E     &kp W     &kp R     &kp T 			&kp Y &kp U  &kp I    &kp O   &kp P
-		&kp F     &kp A     &kp S     &kp D     &kp G 			&kp H &kp J  &kp K    &kp L   &kp SEMI
-		&kp Z     &kp X     &kp C     &kp V     &kp B			&kp N &kp M  &kp CMMA &kp DOT &kp FSLH
-        		  			&kp LCTRL &kp LSHFT &kp SPC  		&td_cw &sl 2 &sl 1
-		>;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-		};
-        
 	};
 };
