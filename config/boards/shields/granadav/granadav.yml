@@ -1,6 +1,6 @@
 file_format: "1"
-id: chocgranada
-name: chocGranada
+id: granadav
+name: granadaV
 type: shield
 url: https://github.com/brickbots/chocV
 requires: [pro_micro]

@@ -1,0 +1,6 @@
+if SHIELD_GRANADAV
+
+config ZMK_KEYBOARD_NAME
+    default "granadaV"
+
+endif
