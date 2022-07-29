@@ -7,3 +7,6 @@ requires: [pro_micro]
 features:
   - keys
   - encoder
+siblings:
+  - granadav_left
+  - granadav_right
