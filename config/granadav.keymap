@@ -107,7 +107,7 @@
 		sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
 		};
 		
-		right_layer {
+			right_layer {
 		bindings = <
 		&none     &kp AMPS  &kp STAR  &none     &none    		&kp EXCL  &kp COLON &kp LPAR &kp RPAR &kp SEMI 
 		&kp DEL   &kp DLLR  &kp PRCNT &kp CARET &none			&td_under &kp EQUAL &kp LBKT &kp RBKT &kp GRAVE
@@ -116,7 +116,7 @@
 		>;
 		};	
 		
-		tri_layer {
+			tri_layer {
 		bindings = <
 		&kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4 &kp NUM_5 			&trans &trans   &trans   &trans  &trans
 		&kp F1     &kp F2     &kp F3     &kp F4    &kp F5  				&trans &to 1  &kp K_VOL_UP &kp K_MUTE &trans 
@@ -125,9 +125,9 @@
 		>;
 		};
 
-        nav_layer {
+        	nav_layer {
 		bindings = <
-		&kp ESC  &none    &none    &none  &none  			    &none    &none     &none     &none     &kp LG(GRAVE)
+		&kp ESC  &none    &kp LA(LSHFT)   &none  &none  			    &none    &none     &none     &none     &kp LG(GRAVE)
 		&kp DEL  &kp LALT &kp LGUI &trans &none  				&kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BKSP 
 		&kp TAB  &none    &none    &none  &none   				&kp RET  &kp HOME  &kp END   &none     &none   
 					               &trans &trans &trans  		&trans &trans &trans
